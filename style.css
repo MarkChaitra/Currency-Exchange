@@ -1,0 +1,16 @@
+html, body{
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(183, 214, 241);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+.holder{
+    width: 70%; height: 4rem;
+    margin: 10px auto auto auto;
+    background-color: white;
+    border-radius: 5px;
+}
