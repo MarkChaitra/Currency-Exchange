@@ -2,15 +2,99 @@ html, body{
     padding: 0%;
     margin: 0%;
     background-color: rgb(183, 214, 241);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 *{
     box-sizing: border-box;
+    font-family: Verdana, sans-serif;
 }
 
-.holder{
-    width: 70%; height: 4rem;
-    margin: 10px auto auto auto;
+
+header{
+    background-color: rgb(0, 8, 158);
+    width: 100%; height: auto;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+
+    h1{
+        color:white;
+    }
+    ul{
+        list-style-type: none;
+        display: inline-flex;
+        color: white;
+        cursor: pointer;
+        li{
+            margin: auto 5px;
+        }
+        li:hover{
+            border-bottom: white solid 1px;
+        }
+    }
+}
+.boxText{
+    width: fit-content;
+    margin: 5rem auto auto auto;
+    color: rgb(0, 8, 158);
+}
+.box{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.currencyTables{
+    margin: 5rem auto;
+    width: fit-content;
+    display: flex; gap: 4rem;
+    table{
+        padding: 1rem;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        td{
+            padding: .2rem 2rem;
+            text-align: center;
+        }
+        
+    }
+}
+
+.convertBox{
+    width: 70%; height: fit-content;
+    margin: 2rem auto auto auto;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 1.5rem;
+
+    .output{
+        position: relative;
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+
+        button{
+            position: absolute;
+            right: 0%;
+            font-size: 1rem;
+            height: 4rem; width: 8rem;
+            border-radius: 10px;
+            color: white;
+            background-color: rgb(0, 8, 158);
+            border: 0cap;
+        }
+    }
+}
+.mainInputHolder{
+    display: flex; width: fit-content;
+    margin: 0 auto;
+    gap: 1rem;
+}
+input{
+    height: 4rem; width: 12rem;
+    border: solid rgb(185, 184, 184) 1px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+select{
+    height: 4rem; width: 4rem;
 }

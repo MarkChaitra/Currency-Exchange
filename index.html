@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="save-money.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fink exchange</title>
+    <title>Xchange</title>
+    <meta name="theme-color" content="rgb(0, 8, 158)">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <header>
+
+        <h1>Xchange</h1>
+        <ul>
+            <li>Personal</li>
+            <li>Buisness</li>
+            <li>Travel</li>
+            <li>Rates</li>
+        </ul>
+
+    </header>
+    
+    <div class="boxText">
+
+        <h1>Xchanges Currency Converter</h1>
+        <h3>Check live foreign currency exchange rates</h3>
+    </div>
     
 
-    <div class="holder">
+    <div class="convertBox">
 
-        <label for="currenciesDropdownFrom">From</label>
-        <select name="currenciesDropdownFrom" id="currenciesDropdownFrom">
-        </select>
+        <div class="mainInputHolder">
+            <div class="box">
+                <label for="currenciesDropdownFrom">From</label>
+                <input type="text" name="moneyFrom" id="moneyFrom">
+                <select name="currenciesDropdownFrom" id="currenciesDropdownFrom">
+                </select>
+            </div>
+    
+            <div class="box">
+                <label for="currenciesDropdownTo">To</label>
+                <select name="currenciesDropdownTo" id="currenciesDropdownTo">
+                </select>
+            </div>
+        </div>
 
-        <label for="currenciesDropdownTo">To</label>
-        <select name="currenciesDropdownTo" id="currenciesDropdownTo">
-        </select>
-
-        <button type="button" onclick="pp()">Convert</button>
+        <div class="output">
+            <h2 class="convertedValues"></h2>
+            <button type="button" onclick="convert()">Convert</button>
+        </div>
 
     </div>
 
-
+    <div class="currencyTables"></div>
 
     <script src="back.js"></script>
 </body>
